@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniro - Furniture Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#" class="navbar__logo">
+          <img
+            src="./images/logo-icon.png"
+            alt="Furniro Icon"
+            class="navbar__logo-icon"
+          />
+          <span class="navbar__logo-text">Furniro</span>
+        </a>
+
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Shop</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navbar__icons">
+          <a href="#" class="navbar__icon-link" aria-label="Account"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+          <a href="#" class="navbar__icon-link" aria-label="Search"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></a>
+          <a href="#" class="navbar__icon-link" aria-label="Wishlist"
+            ><i class="fa-regular fa-heart"></i
+          ></a>
+          <a href="#" class="navbar__icon-link" aria-label="Cart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </div>
+
+        <!-- Mobile navbar  -->
+     <div class="navbar__mobile-menu">
+          <div class="navbar__mobile-menu-toggle" id="mobile-menu-toggle">
+            <i class="fas fa-bars fa-2x"></i>
+          </div>
+          <div class="navbar__mobile-menu-items" id="mobile-menu-items">
+            <ul class="navbar__mobile-menu-list">
+              <li class="navbar__mobile-menu-item"><a href="#" class="navbar__mobile-menu-link">Home</a></li>
+              <li class="navbar__mobile-menu-item"><a href="#" class="navbar__mobile-menu-link">Shop</a></li>
+              <li class="navbar__mobile-menu-item"><a href="#" class="navbar__mobile-menu-link">About</a></li>
+              <li class="navbar__mobile-menu-item"><a href="#" class="navbar__mobile-menu-link">Contact</a></li>
+              
+              <li class="navbar__mobile-menu-item mobile-icons-wrapper">
+                <a href="#" class="navbar__mobile-menu-link"><i class="fa-regular fa-user"></i></a>
+                <a href="#" class="navbar__mobile-menu-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="navbar__mobile-menu-link"><i class="fa-regular fa-heart"></i></a>
+                <a href="#" class="navbar__mobile-menu-link"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+      </nav>
+    </header>
+
+    
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__subtitle">New Arrival</span>
+          <h1 class="hero__title">Discover Our<br />New Collection</h1>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <a href="#" class="btn btn--primary">BUY NOW</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- browse -->
+    <section class="browse">
+      <div class="container">
+        <div class="browse__header">
+          <h2 class="browse__title">Browse The Range</h2>
+          <p class="browse__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="browse__grid">
+          <a href="#" class="browse__card">
+            <img
+              src="./images/browse-dining.jpg"
+              alt="Dining Room"
+              class="browse__image"
+            />
+            <h3 class="browse__card-title">Dining</h3>
+          </a>
+
+          <a href="#" class="browse__card">
+            <img
+              src="./images/browse-living.jpg"
+              alt="Living Room"
+              class="browse__image"
+            />
+            <h3 class="browse__card-title">Living</h3>
+          </a>
+
+          <a href="#" class="browse__card">
+            <img
+              src="./images/browse-bedroom.jpg"
+              alt="Bedroom"
+              class="browse__image"
+            />
+            <h3 class="browse__card-title">Bedroom</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <h2 class="products__title">Our Products</h2>
+
+        <div class="products__grid">
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-1.jpg"
+                alt="Syltherine"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--discount"
+                >-30%</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Syltherine</h3>
+              <p class="product-card__category">Stylish cafe chair</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 2.500.000</span>
+                <span class="product-card__price-old">Rp 3.500.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-2.jpg"
+                alt="Leviosa"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Leviosa</h3>
+              <p class="product-card__category">Stylish cafe chair</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 2.500.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-3.jpg"
+                alt="Lolito"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--discount"
+                >-50%</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Lolito</h3>
+              <p class="product-card__category">Luxury big sofa</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 7.000.000</span>
+                <span class="product-card__price-old">Rp 14.000.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-4.jpg"
+                alt="Respira"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--new"
+                >New</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Respira</h3>
+              <p class="product-card__category">Outdoor bar table and stool</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 500.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-5.jpg"
+                alt="Grifo"
+                class="product-card__image"
+              />
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Grifo</h3>
+              <p class="product-card__category">Night lamp</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 1.500.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-6.jpg"
+                alt="Muggo"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--new"
+                >New</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Muggo</h3>
+              <p class="product-card__category">Small mug</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 150.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-7.jpg"
+                alt="Pingky"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--discount"
+                >-50%</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Pingky</h3>
+              <p class="product-card__category">Cute bed set</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 7.000.000</span>
+                <span class="product-card__price-old">Rp 14.000.000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-wrapper">
+              <img
+                src="./images/product-8.jpg"
+                alt="Potty"
+                class="product-card__image"
+              />
+              <span class="product-card__badge product-card__badge--new"
+                >New</span
+              >
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__name">Potty</h3>
+              <p class="product-card__category">Minimalist flower pot</p>
+              <div class="product-card__prices">
+                <span class="product-card__price">Rp 500.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="products__actions">
+          <button class="btn btn--outline">Show More</button>
+        </div>
+      </div>
+    </section>
+    
+    <!--Inspiration  -->
+    <section class="inspiration">
+      <div class="inspiration__container">
+        <div class="inspiration__content">
+          <h2 class="inspiration__title">50+ Beautiful rooms inspiration</h2>
+          <p class="inspiration__description">
+            Our designer already made a lot of beautiful prototipe of rooms that
+            inspire you
+          </p>
+          <button class="btn btn--primary">Explore More</button>
+        </div>
+
+        <div class="inspiration__slider">
+          <div class="inspiration__slide inspiration__slide--active">
+            <img
+              src="./images/inspire-1.png"
+              alt="Inner Peace Bedroom"
+              class="inspiration__img"
+            />
+
+            <div class="inspiration__overlay">
+              <div class="inspiration__overlay-text">
+                <span class="inspiration__overlay-step"
+                  >01 <span class="line"></span> Bed Room</span
+                >
+                <h3 class="inspiration__overlay-title">Inner Peace</h3>
+              </div>
+              <button class="inspiration__overlay-btn" aria-label="Next slide">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="inspiration__slide inspiration__slide--next">
+            <img
+              src="./images/inspire-2.png"
+              alt="Modern Room"
+              class="inspiration__img"
+            />
+
+            <button class="inspiration__slider-btn" aria-label="Next slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="inspiration__pagination">
+              <span class="dot dot--active"
+                ><span class="dot__inner"></span
+              ></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="inspiration__slide inspiration__slide--partial">
+            <img
+              src="./images/inspire-3.png"
+              alt="Room 3"
+              class="inspiration__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- setup -->
+    <section class="setup">
+    <div class="setup__header">
+      <p class="setup__subtitle">Share your setup with</p>
+      <h2 class="setup__title">#FuniroFurniture</h2>
+    </div>
+
+    <div class="setup__gallery">
+      
+      <div class="setup__col setup__col--1">
+        <img src="./images/setup-1.png" alt="Shelf" class="setup__img setup__img--1" />
+        <img src="./images/setup-6.png" alt="Chair" class="setup__img setup__img--6" />
+      </div>
+
+      <div class="setup__col setup__col--2">
+        <img src="./images/setup-2.png" alt="Laptop Desk" class="setup__img setup__img--2" />
+        <img src="./images/setup-7.png" alt="Vases" class="setup__img setup__img--7" />
+      </div>
+
+      <div class="setup__col setup__col--3">
+        <img src="./images/setup-3.png" alt="Dining Room" class="setup__img setup__img--3" />
+      </div>
+
+      <div class="setup__col setup__col--4">
+        <img src="./images/setup-4.png" alt="Bedroom" class="setup__img setup__img--4" />
+        <div class="setup__col-4-bottom">
+          <img src="./images/setup-8.png" alt="Picture Frame" class="setup__img setup__img--8" />
+          <img src="./images/setup-9.png" alt="Kitchen Hooks" class="setup__img setup__img--9" />
+        </div>
+      </div>
+
+      <div class="setup__col setup__col--5">
+        <img src="./images/setup-5.png" alt="Brick Wall Dining" class="setup__img setup__img--5" />
+      </div>
+
+    </div>
+  </section>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+    <div class="container">
+      
+      <div class="footer__main">
+        
+        <div class="footer__col footer__col--brand">
+          <h2 class="footer__logo">Funiro.</h2>
+          <p class="footer__address">
+            400 University Drive Suite 200 Coral<br>
+            Gables,<br>
+            FL 33134 USA
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Links</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Home</a></li>
+            <li><a href="#" class="footer__link">Shop</a></li>
+            <li><a href="#" class="footer__link">About</a></li>
+            <li><a href="#" class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Help</h4>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Payment Options</a></li>
+            <li><a href="#" class="footer__link">Returns</a></li>
+            <li><a href="#" class="footer__link">Privacy Policies</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__col--newsletter">
+          <h4 class="footer__heading">Newsletter</h4>
+          <form action="#" class="footer__form">
+            <input type="email" placeholder="Enter Your Email Address" class="footer__input" required>
+            <button type="submit" class="footer__submit">SUBSCRIBE</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>2026 furino. All rights reverved</p>
+      </div>
+
+    </div>
+  </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
